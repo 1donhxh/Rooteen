@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+ /* Header */
+header {
+    background-image: url('images/routine.webp'); /* Replace with the path to your image */
+    background-size: cover; /* Makes the image cover the entire header area */
+    background-position: center; /* Centers the image in the header */
+    color: black;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  
+  /* Tab Container */
+  .tab-container {
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    border-radius: 8px;
+    max-width: 800px;
+  }
+  
+  /* Tab Button */
+  .tab-button {
+    background-color: #ddd;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin: 0 0.3rem;
+  }
+  
+  .tab-button:hover {
+    background-color: #ccc;
+  }
+  
+  .tab-button.active {
+    background-color: #4a90e2;
+    color: white;
+  }
+  
+  /* Tab Content */
+  .tab-content {
+    display: none;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+
+  /* Double line spacing for tab content */
+.tab-content ul li {
+    margin-bottom: 1.5rem; /* Adds extra space between each list item */
+    line-height: 1.8; /* Increases line height within each item for readability */
+  }
+  
+  .tab-content p {
+    margin-bottom: 1.5rem; /* Adds extra space after paragraphs */
+  }
+  

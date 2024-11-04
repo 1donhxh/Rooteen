@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Routine</title>
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+  <!-- CSS File -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    
+  </header>
+
+  <!-- Tab Headers -->
+  <div class="tab-container">
+    <button class="tab-button active" onclick="openTab(event, 'morning')">Morning</button>
+    <button class="tab-button" onclick="openTab(event, 'school')">School Hours</button>
+    <button class="tab-button" onclick="openTab(event, 'postSchool')">Post-School Routine</button>
+    <button class="tab-button" onclick="openTab(event, 'evening')">Evening</button>
+    <button class="tab-button" onclick="openTab(event, 'saturday')">Saturday</button>
+    <button class="tab-button" onclick="openTab(event, 'sunday')">Sunday</button>
+  </div>
+
+  <!-- Tab Content Sections -->
+  <div id="morning" class="tab-content active">
+    <h3>Morning (Pre-School)</h3>
+    <ul>
+      <li><strong>4:30/5:00 am</strong> - Wake up</li>
+      <li><strong>4:30-5:15/5:00-5:45 am</strong> - Prepare and eat breakfast, then clean up (45 mins max)</li>
+      <li><strong>5:15/5:45 - 5:45/6:15 am</strong> - Workout (30 mins)</li>
+      <li><strong>5:45/6:15 - 6:05/6:35 am</strong> - Shower (20 mins)</li>
+      <li><strong>6:05/6:35 am</strong> - Finish any meal prep needed for the next day’s dinner</li>
+      <li><strong>6:15-6:30/6:45-7:00 am</strong> - Leave for school</li>
+    </ul>
+  </div>
+
+  <div id="school" class="tab-content">
+    <h3>School Hours</h3>
+    <p><strong>7:00 am - 4:00 pm</strong> - School (Some days end at 3 or 1 pm)</p>
+  </div>
+
+  <div id="postSchool" class="tab-content">
+    <h3>Post-School Routine (Based on 4 pm school end time)</h3>
+    <ul>
+      <li><strong>4:30 - 5:00 pm</strong> - Snack/Unwind time (30 mins)</li>
+      <li><strong>5:00 - 7:00 pm</strong> - Study/Homework (with a 15-min break every 45 mins)</li>
+      <li><strong>7:00 - 8:00 pm</strong> - Personal time (relax, hobbies, etc.)</li>
+      <li><strong>8:00 - 8:30 pm</strong> - Dinner and clean up</li>
+      <li><strong>8:30 - 9:15 pm</strong> - Final study session if needed</li>
+    </ul>
+  </div>
+
+  <div id="evening" class="tab-content">
+    <h3>Evening</h3>
+    <ul>
+      <li><strong>9:15 - 9:45 pm</strong> - Wind down, prep for the next day</li>
+      <li><strong>9:45 - 10:00 pm</strong> - Personal time (reading, relaxation)</li>
+      <li><strong>10:00 pm</strong> - Bedtime</li>
+    </ul>
+  </div>
+
+  <div id="saturday" class="tab-content">
+    <h3>Saturday</h3>
+    <ul>
+      <li>Follow the same morning routine as weekdays</li>
+      <li>After breakfast, do laundry before lunch</li>
+      <li>Flexible study hours with breaks (4 hours total)</li>
+      <li>Personal Time - 2 hours throughout the day</li>
+      <li>Evening Prep - Prepare ingredients for Sunday cooking</li>
+    </ul>
+  </div>
+
+  <div id="sunday" class="tab-content">
+    <h3>Sunday</h3>
+    <ul>
+      <li>Cooking for the week along with the normal routine</li>
+      <li>Study & Homework - Complete 4 hours with breaks as needed</li>
+      <li>Relaxation Time - Focus on self-care to recharge for the week</li>
+    </ul>
+  </div>
+
+  <!-- JavaScript for Tab Navigation -->
+  <script src="index.js"></script>
+
+</body>
+</html>

@@ -1,14 +1,14 @@
-function toggleDropdown(day) {
-  var content = document.getElementById(day); // Get the dropdown content for the specified day
-  var button = content.previousElementSibling; // Get the associated button
+// Attach event listeners to each dropdown button
+document.querySelectorAll('.dropdown-btn').forEach(button => {
+  button.addEventListener('click', function() {
+    // Get the next sibling (dropdown content)
+    const content = this.nextElementSibling;
 
-  // Toggle the 'active' class on the button for styling purposes
-  button.classList.toggle('active');
-
-  // Toggle the visibility of the dropdown content
-  if (content.style.display === "block") {
-    content.style.display = "none";
-  } else {
-    content.style.display = "block";
-  }
-}
+    // Toggle the display of the dropdown content
+    if (content.style.display === "block") {
+      content.style.display = "none";  // Hide the content
+    } else {
+      content.style.display = "block";  // Show the content
+    }
+  });
+});

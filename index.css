@@ -3,22 +3,27 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #f4f4f9;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-/* Tab Container */
-.tab-container {
-  display: flex;
-  justify-content: center;
-  background-color: #eee;
-  padding: 0.5rem;
-  margin: 1rem auto;
-  border-radius: 8px;
+/* Header */
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #4a90e2;
+  color: white;
+}
+
+/* Dropdown Container */
+.dropdown-container {
+  width: 100%;
   max-width: 800px;
-  flex-wrap: wrap; /* Allows tabs to wrap on small screens */
+  margin: 1rem auto;
 }
 
-/* Tab Button */
-.tab-button {
+/* Dropdown Button */
+.dropdown-btn {
   background-color: #ddd;
   border: none;
   padding: 0.5rem 1rem;
@@ -27,41 +32,50 @@ body {
   color: #333;
   transition: background-color 0.3s;
   border-radius: 5px;
-  margin: 0.3rem; /* Adds more space between buttons on smaller screens */
+  width: 100%;
+  text-align: left;
+  margin: 0.3rem 0; /* Adds space between dropdown buttons */
 }
 
-.tab-button:hover {
+/* Dropdown Button Hover Effect */
+.dropdown-btn:hover {
   background-color: #ccc;
 }
 
-.tab-button.active {
-  background-color: #4a90e2;
-  color: white;
-}
-
-/* Tab Content */
-.tab-content {
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
   display: none;
   padding: 1rem;
-  max-width: 800px;
-  margin: 0 auto;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
 }
 
-.tab-content.active {
-  display: block;
+/* Dropdown Content for Each Day */
+.dropdown-content h3 {
+  font-size: 1.2rem;
+  color: #4a90e2;
 }
 
-/* Double line spacing for tab content */
-.tab-content ul li {
+/* List Styling Inside Dropdown */
+.dropdown-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dropdown-content ul li {
   margin-bottom: 1.5rem; /* Adds extra space between each list item */
   line-height: 1.8; /* Increases line height within each item for readability */
 }
 
-.tab-content p {
-  margin-bottom: 1.5rem; /* Adds extra space after paragraphs */
+.dropdown-content p {
+  margin-bottom: 1.5rem;
+}
+
+/* JavaScript Show/Hide */
+.dropdown-btn.active + .dropdown-content {
+  display: block;
 }
 
 /* Mobile Styles */
@@ -70,32 +84,25 @@ body {
     font-size: 14px; /* Smaller font size for mobile readability */
   }
 
-  /* Tab Container */
-  .tab-container {
-    padding: 0.3rem; /* Reduces padding for mobile screens */
-    margin: 0.5rem auto; /* Reduces outer margin */
-  }
-
-  /* Tab Button */
-  .tab-button {
+  /* Dropdown Button */
+  .dropdown-btn {
     padding: 0.3rem 0.8rem; /* Smaller padding for mobile */
-    font-size: 14px; /* Smaller font size for mobile tabs */
-    flex: 1 1 auto; /* Allows tabs to spread evenly on small screens */
+    font-size: 14px; /* Smaller font size for mobile */
   }
 
-  /* Tab Content */
-  .tab-content {
+  /* Dropdown Content */
+  .dropdown-content {
     padding: 0.8rem; /* Reduced padding inside content on mobile */
     max-width: 100%; /* Ensures full width usage on mobile */
     box-shadow: none; /* Removes shadow for simpler look on mobile */
   }
 
-  .tab-content ul li {
+  .dropdown-content ul li {
     margin-bottom: 1rem; /* Slightly less space between list items */
     line-height: 1.6; /* Slightly tighter line height */
   }
 
-  .tab-content p {
+  .dropdown-content p {
     margin-bottom: 1rem; /* Slightly less space after paragraphs */
   }
 }

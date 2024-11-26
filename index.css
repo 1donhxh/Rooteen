@@ -13,6 +13,7 @@ header {
   padding: 1rem;
   background-color: #4a90e2;
   color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the header */
 }
 
 /* Dropdown Container */
@@ -20,13 +21,14 @@ header {
   width: 100%;
   max-width: 800px;
   margin: 1rem auto;
+  padding: 0 1rem;
 }
 
 /* Dropdown Button */
 .dropdown-btn {
   background-color: #ddd;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   cursor: pointer;
   font-weight: bold;
   color: #333;
@@ -35,6 +37,7 @@ header {
   width: 100%;
   text-align: left;
   margin: 0.3rem 0; /* Adds space between dropdown buttons */
+  font-size: 16px; /* Slightly larger font size */
 }
 
 /* Dropdown Button Hover Effect */
@@ -45,17 +48,18 @@ header {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  padding: 1rem;
+  padding: 1.2rem;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Dropdown Content for Each Day */
 .dropdown-content h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #4a90e2;
+  margin-bottom: 0.8rem; /* Adds space between title and content */
 }
 
 /* List Styling Inside Dropdown */
@@ -73,7 +77,7 @@ header {
   margin-bottom: 1.5rem;
 }
 
-/* JavaScript Show/Hide */
+/* Active Dropdown Button to Show Content */
 .dropdown-btn.active + .dropdown-content {
   display: block;
 }
@@ -86,13 +90,13 @@ header {
 
   /* Dropdown Button */
   .dropdown-btn {
-    padding: 0.3rem 0.8rem; /* Smaller padding for mobile */
+    padding: 0.5rem 0.8rem; /* Adjusted padding for mobile */
     font-size: 14px; /* Smaller font size for mobile */
   }
 
   /* Dropdown Content */
   .dropdown-content {
-    padding: 0.8rem; /* Reduced padding inside content on mobile */
+    padding: 1rem; /* Reduced padding inside content on mobile */
     max-width: 100%; /* Ensures full width usage on mobile */
     box-shadow: none; /* Removes shadow for simpler look on mobile */
   }
